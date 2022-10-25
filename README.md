@@ -117,15 +117,18 @@ Para verificar el modelo propuesto se graficaron los residuos del mismo (Figura 
 Además, se realizó en los residuales el test de Ljung-Box, cuyo resultado se encuentra en la Tabla 3. Esta prueba plantea las siguientes hipótesis:
 
 • Ho: Existe ruido blanco (hipótesis nula)
+
 • H1: No hay existencia de ruido blanco (hipótesis alternativa)
 
-De acuerdo al p-value del test del Ljung-Box (0.54134) concluyo que no existe evidencia suficiente para rechazar Ho. Esto implica la presencia de ruido blanco (white noise) y por lo tanto el modelo ARIMA (2,1,0) ajusta bien.
+De acuerdo al p-value del test del Ljung-Box (0.54134) se concluye 
+que no existe evidencia suficiente para rechazar Ho. Esto implica la presencia de ruido blanco (white noise) y por lo tanto el modelo ARIMA (2,1,0) ajusta bien.
 
 **Tabla 3. Test Residuos Modelo propuesto ARIMA (2,1,0)**
 
 ![fig16](https://user-images.githubusercontent.com/69001260/197664126-71ada247-7112-48d3-b14b-60d83c68a922.png)
 
 **c.2) Predicción**
+
 Como último paso, se realizó una predicción con el modelo propuesto a los efectos de investigar el posible futuro comportamiento de la serie bajo estudio. En la Figura 11 se muestra gráficamente con una línea roja la predicción de diez (10) valores futuros de la producción mundial de caña. Como se aprecia, la predicción continúa con una tendencia ascendente. 
 
 **Fig.	11.	Predicciones	con	el	modelo	ARIMA	(2,1,0)**
@@ -133,7 +136,7 @@ Como último paso, se realizó una predicción con el modelo propuesto a los efe
 
 ![fig17](https://user-images.githubusercontent.com/69001260/197665982-9f810ec3-f6b4-4c1c-b4ff-0a67d38e4eaf.png)
 
-**5 Consideraciones Finales**
+**5. Consideraciones Finales**
 
 En el presente informe trabajé con una serie de 60 datos anuales, que abarca 1960 a 2019, de la producción mundial en toneladas de caña de azúcar. De lo desarrollado podemos informar que la serie proviene de un proceso no estacionario, esto es, que las características del proceso estocástico cambian con el tiempo. El modelo propuesto fue un ARIMA (2,1,0): X(t) = .2617 X(t-1) - .4180 X(t-2) + Z(t), que arrojó un AICC igual a .224322E+04. Finalmente, el test de Ljung-Box permitió documentar que el modelo propuesto ajusta bien.
 
